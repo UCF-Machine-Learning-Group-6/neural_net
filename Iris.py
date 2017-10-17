@@ -54,7 +54,7 @@ sess = tf.InteractiveSession()
 init = tf.global_variables_initializer()
 sess.run(init)
 #number of interations
-epoch=2000
+epoch=5000
 
 for step in range(epoch):
    _, c=sess.run([train_step,cross_entropy], feed_dict={x: x_input, y_:[t for t in y_input.as_matrix()]})
